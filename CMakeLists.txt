@@ -41,7 +41,8 @@ option(TRITON_COMMON_ENABLE_JSON "Build json-related libs" ON)
 
 if(TRITON_COMMON_ENABLE_JSON)
   find_package(RapidJSON CONFIG REQUIRED)
-  message(STATUS "RapidJSON found. Headers: ${RAPIDJSON_INCLUDE_DIRS}")
+  #message(STATUS "RapidJSON found. Headers: ${RAPIDJSON_INCLUDE_DIRS}")
+  message(STATUS "RapidJSON found for triton common. Headers: ${RapidJSON_INCLUDE_DIRS}")
 endif()
 
 set(THREADS_PREFER_PTHREAD_FLAG TRUE)
